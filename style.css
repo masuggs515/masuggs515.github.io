@@ -1,0 +1,89 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+body{
+  margin: 0;
+  background-image: url(https://img.freepik.com/free-photo/dark-grunge-style-scratched-metal-surface_1048-12951.jpg?size=626&ext=jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+}
+
+
+h1{
+  color: rgb(176, 178, 255);
+  margin: 0;
+  padding: 2vh 1vh;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 70px;
+}
+
+h2{
+  margin: 0;
+  padding: 1vh;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+
+}
+
+button{
+  background-color: rgb(83, 1, 83);
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+button:hover{
+  background-color: rgba(83,1,83, 0.75);
+}
+.container{
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: auto auto auto auto auto;
+
+}
+
+#game div {
+  border: 2px solid black;
+  background-image:url(https://i.pinimg.com/originals/d6/97/59/d69759005031369dd6b7e534e10bc441.jpg);
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.082);
+  width: 15vw;
+  height: 20vh;
+  margin: 10px;
+  display: inline-block;
+  cursor: pointer;
+} 
+
+.orange2{
+  background-image: url(https://media1.giphy.com/media/3ohs7S1BeGEUlaIqRy/source.gif) !important;
+  background-size: cover;
+  background-position: center;
+  
+}
+.green2{
+  background-image: url(https://media4.giphy.com/media/l1BgR0rBqjUtgCKre/giphy.gif) !important;
+  background-size: cover;
+  
+  background-position: center;
+}
+.blue2{
+  background-image: url(https://i.pinimg.com/originals/96/68/80/966880402324c6d44dc6fc03133d86c7.gif) !important;
+  background-size: cover;
+  background-position: center;
+}
+.purple2{
+  background-image: url(https://uploads-ssl.webflow.com/5d2b950d9ea87fc61f0c1f3e/5daa2f818bfff61e250fd7da_ezgif.com-resize.gif) !important;
+  background-size: cover;
+  background-position: center;
+}
+.red2{
+  background-image: url(https://miro.medium.com/max/1000/0*f21oPdaDHhQxXZqr.gif) !important;
+  background-size: cover;
+  background-position: center;
+}
