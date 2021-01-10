@@ -60,6 +60,10 @@ button:hover{
   cursor: pointer;
 } 
 
+#game div:hover{
+  transform: scale(1.1);
+}
+
 .orange2{
   background-image: url(https://media1.giphy.com/media/3ohs7S1BeGEUlaIqRy/source.gif) !important;
   background-size: cover;

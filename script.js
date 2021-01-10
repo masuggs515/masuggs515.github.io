@@ -3,7 +3,11 @@ const restart = document.querySelector('#restart');
 const score = document.querySelector('#score');
 const bestScore = document.querySelector('#best-score');
 
+if(localStorage.best){
 bestScore.innerText = localStorage.best
+  }else{
+    bestScore.innerText = 0;
+  }
 
 const COLORS = [
   "red",
@@ -119,7 +123,9 @@ function handleCardClick(event) {
         if(matches.length == COLORS.length/2){
           setTimeout(function(){alert('Congrats you won!');}, 250);
           restart.innerText = 'New Game';
+          if(score < bestScore){
           localStorage.setItem('best', JSON.stringify(count+1))
+          }
         }
           first = null;
           second = null;
@@ -140,7 +146,9 @@ function handleCardClick(event) {
 
   count++;
   score.innerText = count;
-  if(parseInt(score.innerText)<parseInt(bestScore.innerText)){
+  if(bestScore.innerText == 0){
+    score.parentElement.style.color = 'white';
+  }else if(parseInt(score.innerText)<parseInt(bestScore.innerText)){
     score.parentElement.style.color = 'green';
   }else if(score.innerText>bestScore.innerText){
     score.parentElement.style.color = 'red';
